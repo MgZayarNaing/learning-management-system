@@ -48,7 +48,7 @@ A REST api written in Django for people with deadlines
 
 # Django Api
 
-## Todo app API Reference
+##  Files API Reference
 
 #### Login (POST)
 
@@ -61,32 +61,32 @@ https://127.0.0.1/api/auth/login
 | username  | string | **Required** admin           |
 | password  | string | **Required** superuser       |
 
-#### Todo app list (GET)
+####  Files list (GET)
 
 ```https
 https://127.0.0.1:8000/api/files/all
 ```
-#### Todo app create (POST)
+####  Files create (POST)
 | Arguments | Description                  |
 | :-------- | :--------------------------- |
 | name      | **Required**                 |
 
-#### Todo app view (GET)
+####  Files view (GET)
 
 ```https
 https://127.0.0.1:8000/api/files/view/{id}
 ```
-#### Todo app update (PUT)
+####  Files update (PUT)
 
 ```https
 https://127.0.0.1:8000/api/files/change/{id}
 ```
-#### Todo app create (POST)
+####  Files create (POST)
 | Arguments | Description                  |
 | :-------- | :--------------------------- |
 | name      | **Required**                 |
 
-#### Todo app delete (DELETE)
+####  Files delete (DELETE)
 
 ```https
 https://127.0.0.1:8000/api/files/delete/{id}

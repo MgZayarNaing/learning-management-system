@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from my_app.serializer import  FilesSerializer,RolesSerializer
-from my_app.models import  FilesModel,RolesModel
+from my_app.serializer import  FilesSerializer,RolesSerializer,PermissionSerializer
+from my_app.models import  FilesModel,RolesModel,PermissionModel
 
 from rest_framework.decorators import authentication_classes, permission_classes
 from rest_framework.authentication import TokenAuthentication

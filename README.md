@@ -14,7 +14,7 @@ A REST api written in Django for people with deadlines
     ```
 * Then, Git clone this repo to your PC
     ```bash
-        $ git clone https://github.com/MgZayarNaing/learning-management-system-.git
+        $ git clone https://github.com/MgZayarNaing/learning-management-system.git
 
 * #### Dependencies
     1. Cd into your the cloned repo as such:

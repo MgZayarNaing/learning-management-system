@@ -21,3 +21,12 @@ class RolesModel(models.Model):
 
     def __str__(self):
         return self.name
+    
+class PermissionModel(models.Model):
+    id = models.AutoField(primary_key=True)
+    roles_id = models.ForeignKey(RolesModel, on_delete=models.CASCADE)
+    name = models.CharField(max_length=50)
+    created_at = models.DateTimeField(default=datetime.now())
+
+    def __str__(self):
+        return self.name

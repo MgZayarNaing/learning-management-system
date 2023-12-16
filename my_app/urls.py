@@ -1,6 +1,6 @@
 from django.urls import path
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
-from my_app.views import  files_views
+from my_app.views import  files_views,roles_views
 
 urlpatterns = [
 
@@ -14,4 +14,9 @@ urlpatterns = [
     path('files/change/<int:pk>', files_views.FilesUpdate),
     path('files/delete/<int:pk>', files_views.FilesDelete),
 
+    path('roles/all', roles_views.RolesIndex),
+    path('roles/add', roles_views.RolesStore),
+    path('roles/view/<int:pk>', roles_views.RolesShow),
+    path('roles/change/<int:pk>', roles_views.RolesUpdate),
+    path('roles/delete/<int:pk>', roles_views.RolesDelete),
 ]
